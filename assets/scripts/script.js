@@ -21,7 +21,7 @@ function myFunc1() {
       "https://img.gkbcdn.com/p/2022-03-05/ba3390e40b83433dbb103ebfacbca4b8-497360-4._w500_p1_.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc2() {
   let obj = {
@@ -46,7 +46,7 @@ function myFunc2() {
       "https://img.gkbcdn.com/s3/p/2020-03-25/tronsmart-onyx-ace-bluetooth-5-0-tws-earphones-white-1585098958849.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc3() {
   let obj = {
@@ -71,7 +71,7 @@ function myFunc3() {
       "https://img.gkbcdn.com/s3/p/2021-11-29/razer-deathadder-essential-optical-gaming-mouse-black-b53ecc-1638169302886.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc4() {
   let obj = {
@@ -96,7 +96,7 @@ function myFunc4() {
       "https://img.gkbcdn.com/s3/p/2019-11-15/mifo-o7-bluetooth-5-0-tws-qualcomm-qcc3020-earphones-black-1574132883691.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc5() {
   let obj = {
@@ -121,7 +121,7 @@ function myFunc5() {
       "https://img.gkbcdn.com/s3/p/2021-07-20/one-netbook-onexplayer-game-console-pc-i7-1165g7-16g-ram-1tb-win10-1626751595394.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc6() {
   let obj = {
@@ -146,7 +146,7 @@ function myFunc6() {
       "https://img.gkbcdn.com/s3/p/2020-08-06/xiaomi-air-lite-tws-earphones--1596681079801.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc7() {
   let obj = {
@@ -171,7 +171,7 @@ function myFunc7() {
       "https://img.gkbcdn.com/s3/p/2019-09-27/stmagic-spt31-512g-mini-portable-m-2-ssd-gray-1571995743755.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }
 function myFunc8() {
   let obj = {
@@ -196,5 +196,5 @@ function myFunc8() {
       "https://img.gkbcdn.com/p/2020-04-22/sabbat-e12-bluetooth-5-0-tws-earphone-gunmetal-1587520180540._w500_p1_.jpg",
   };
 
-  localStorage.setItem("singleProduct", JSON.stringify(obj));
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(obj));
 }

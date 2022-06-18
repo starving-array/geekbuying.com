@@ -186,7 +186,6 @@ function displayProductByone(
       discount,
       shipToOmit,
       imageUrl,
-      imageReview,
       review_num,
       freeShip,
       productId

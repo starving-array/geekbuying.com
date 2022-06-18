@@ -62,44 +62,17 @@ function displayNav(data) {
         discount,
         shipToOmit,
         imageUrl,
-        imageReview,
         review_num,
         freeShip,
         productId
       );
+     
     });
   });
 }
 // dataPassToDetail
-class Product {
-    constructor(
-      productName,
-      currencySign,
-      offerPrice,
-      actualPrice,
-      discount,
-      shipToOmit,
-      imageUrl,
-      review_num,
-      freeShip,
-      productId,
-      shipto
-    ) {
-      this.productName = productName;
-      this.currencySign = currencySign;
-      this.offerPrice = offerPrice;
-      this.actualPrice = actualPrice;
-      this.discount = discount;
-      this.shipToOmit = shipToOmit; // it's array of countries
-      this.imageUrl = imageUrl;
-      this.review_num = review_num;
-      this.freeShip = freeShip;
-      this.productId = productId;
-      this.shipto = shipto;
-    }
-  }
-  
-  function dataPassToDetail(
+class ProductSingle {
+  constructor(
     productName,
     currencySign,
     offerPrice,
@@ -109,30 +82,56 @@ class Product {
     imageUrl,
     review_num,
     freeShip,
-    productId
+    productId,
+    shipto
   ) {
-    let shipto = document.getElementById("shipToNavImg");
-    let newObj = new Product(
-      productName,
-      currencySign,
-      offerPrice,
-      actualPrice,
-      discount,
-      shipToOmit,
-      imageUrl,
-      review_num,
-      freeShip,
-      productId,
-      shipto.alt
-    );
-    //   console.log(newObj)
-    // localStore
-    localStorage.setItem("dataToLocalDetail", JSON.stringify(newObj));
-    //
-    //   window.location.href= ""
+    this.productName = productName;
+    this.currencySign = currencySign;
+    this.offerPrice = offerPrice;
+    this.actualPrice = actualPrice;
+    this.discount = discount;
+    this.shipToOmit = shipToOmit; // it's array of countries
+    this.imageUrl = imageUrl;
+    this.review_num = review_num;
+    this.freeShip = freeShip;
+    this.productId = productId;
+    this.shipto = shipto;
   }
-  
+}
 
-  document.getElementById("logoNav").addEventListener("click", function () {
-    window.location.href = "/geekbuying.com/index.html";
-  });
+function dataPassToDetail(
+  productName,
+  currencySign,
+  offerPrice,
+  actualPrice,
+  discount,
+  shipToOmit,
+  imageUrl,
+  review_num,
+  freeShip,
+  productId
+) {
+  let shipto = document.getElementById("shipToNavImg");
+  let newObj = new ProductSingle(
+    productName,
+    currencySign,
+    offerPrice,
+    actualPrice,
+    discount,
+    shipToOmit,
+    imageUrl,
+    review_num,
+    freeShip,
+    productId,
+    shipto.alt
+  );
+  //   console.log(newObj)
+  // localStore
+  localStorage.setItem("dataToLocalDetail", JSON.stringify(newObj));
+  //
+  //   window.location.href= ""
+}
+
+document.getElementById("logoNav").addEventListener("click", function () {
+  window.location.href = "/geekbuying.com/index.html";
+});

@@ -761,3 +761,8 @@
 br {
   color: gray;
 }
+
+
+#allProductBoxOuter{
+  cursor: pointer;
+}

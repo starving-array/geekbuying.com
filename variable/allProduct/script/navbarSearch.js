@@ -132,3 +132,7 @@ class Product {
     //   window.location.href= ""
   }
   
+
+  document.getElementById("logoNav").addEventListener("click", function () {
+    window.location.href = "/geekbuying.com/index.html";
+  });

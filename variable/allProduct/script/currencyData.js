@@ -2094,7 +2094,6 @@ let currencyMaster = [
   },
 ];
 
-
 // let container= document.getElementById("shipToNavOptionMain");
 function appendShipTo(singleData, container) {
   let box = document.createElement("div");
@@ -2126,7 +2125,10 @@ function applyShipFrom(singleData) {
       singleData.countryname;
   });
 
-  document.getElementById("shipFromDromDown").append(box);
+  let abcs = document.getElementById("shipFromDromDown");
+  if (abcs) {
+    abcs.append(box);
+  }
 }
 
 let UniqueCurrency = {};

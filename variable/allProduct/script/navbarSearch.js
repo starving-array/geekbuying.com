@@ -131,26 +131,13 @@ document.getElementById("logoNav").addEventListener("click", function () {
   window.location.href = "/index.html";
 });
 
-// active user
-let activeUserInfo = JSON.parse(localStorage.getItem("activeUser"));
-console.log(activeUserInfo);
-if (activeUserInfo != undefined) {
-  let spanspan = document.createElement("span");
-  spanspan.innerText = `Hello ${activeUserInfo.name} !`;
-  spanspan.style.fontSize = "1.1rem";
-  spanspan.style.fontWeight = "bold";
-  spanspan.style.textTransform = "capitalize";
-  document.getElementById("signInUpNav").innerHTML = "";
-  document.getElementById("signInUpNav").append(spanspan);
-}
-
 // cart redirect
 // cartCount
 
 document
   .getElementById("AddToCartOnNav")
   .addEventListener("click", function () {
-    window.location.href = "/cart/cart.html";
+    window.location.href = "./cart/cart.html";
   });
 
 let totalProductInCart = JSON.parse(localStorage.getItem("buyNow")).length;
@@ -158,9 +145,18 @@ console.log(totalProductInCart);
 document.getElementById("cartCount").innerText = totalProductInCart;
 
 // sign in signUpRed signInRed
+// active user
+let activeUserInfo = JSON.parse(localStorage.getItem("activeUser"));
 
-let singinButtonnnn = document.getElementById("signInRed");
-if (singinButtonnnn != null) {
+if (activeUserInfo) {
+  let spanspan = document.createElement("span");
+  spanspan.innerText = `Hello ${activeUserInfo.name} !`;
+  spanspan.style.fontSize = "1.1rem";
+  spanspan.style.fontWeight = "bold";
+  spanspan.style.textTransform = "capitalize";
+  document.getElementById("signInUpNav").innerHTML = "";
+  document.getElementById("signInUpNav").append(spanspan);
+} else {
   document.getElementById("signInRed").addEventListener("click", function () {
     window.location.href = "/signinandsignup/signin.html";
   });

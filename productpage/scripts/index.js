@@ -18,6 +18,7 @@ const productImage = document.getElementById("productImage");
 // };
 
 let currData = JSON.parse(localStorage.getItem("dataToLocalDetail")) || {};
+
 const proImg = document.createElement("img");
 proImg.setAttribute("src", currData.imageUrl);
 let thumbnail = document.createElement("div");

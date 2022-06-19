@@ -156,7 +156,10 @@ if (activeUserInfo) {
   spanspan.style.textTransform = "capitalize";
   document.getElementById("signInUpNav").innerHTML = "";
   document.getElementById("signInUpNav").append(spanspan);
-} else {
+}
+
+let singinButtonnnn = document.getElementById("signInRed");
+if (singinButtonnnn != null) {
   document.getElementById("signInRed").addEventListener("click", function () {
     window.location.href = "/signinandsignup/signin.html";
   });

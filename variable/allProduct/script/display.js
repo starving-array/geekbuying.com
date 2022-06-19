@@ -133,7 +133,7 @@ function displayProductByone(
 
   let imageLike = document.createElement("img");
   imageLike.setAttribute("class", "likeUpdate");
-  imageLike.src = "./images/heart(3).png";
+  imageLike.src = "https://cdn-icons-png.flaticon.com/512/833/833300.png";
   if (imageReview) {
     imageLike.src = imageReview;
   }
@@ -142,11 +142,8 @@ function displayProductByone(
   countNoInfo.innerText = review_num;
   // function to increment ===================================
   imageLike.addEventListener("click", function () {
-    if (
-      imageLike.src ==
-      "http://127.0.0.1:5500/geekbuying.com/variable/allProduct/images/heart(3).png"
-    ) {
-      //   countNoInfo.innerText = review_num++;
+    if (imageLike.src == "https://cdn-icons-png.flaticon.com/512/833/833300.png") {
+        // countNoInfo.innerText = review_num++;
       increaseReviewCount(imageLike, productId, countNoInfo, review_num);
     } else {
       //   countNoInfo.innerText = review_num--;
@@ -177,7 +174,7 @@ function displayProductByone(
     productIdSpan
   );
   boxDiv.append(innerBox);
-  boxDiv.addEventListener("click", function () {
+  imageBox.addEventListener("click", function () {
     dataPassToDetail(
       productName,
       currencySign,
@@ -188,7 +185,7 @@ function displayProductByone(
       imageUrl,
       review_num,
       freeShip,
-      productId
+      productId,
     );
   });
   container.append(boxDiv);
@@ -197,13 +194,11 @@ function displayProductByone(
 
 function increaseReviewCount(imageSS, productId, countNoInfo, review_num) {
   countNoInfo.innerText = review_num++;
-  imageSS.src =
-    "http://127.0.0.1:5500/geekbuying.com/variable/allProduct/images/heart(4).png";
+  imageSS.src = "https://cdn-icons-png.flaticon.com/512/833/833472.png";
   masterRawAllProduct.forEach(function (element, index) {
     if (element.productId == productId) {
       element.review_num++;
-      element.imageReview =
-        "http://127.0.0.1:5500/geekbuying.com/variable/allProduct/images/heart(4).png";
+      element.imageReview = "https://cdn-icons-png.flaticon.com/512/833/833472.png";
     }
   });
   localStorage.setItem(
@@ -216,13 +211,13 @@ function decreaseReviewCount(imageSS, productId, countNoInfo, review_num) {
   countNoInfo.innerText = review_num--;
 
   imageSS.src =
-    "http://127.0.0.1:5500/geekbuying.com/variable/allProduct/images/heart(3).png";
+    "https://cdn-icons-png.flaticon.com/512/833/833300.png";
 
   masterRawAllProduct.forEach(function (element, index) {
     if (element.productId == productId) {
       element.review_num--;
       element.imageReview =
-        "http://127.0.0.1:5500/geekbuying.com/variable/allProduct/images/heart(3).png";
+        "https://cdn-icons-png.flaticon.com/512/833/833300.png";
     }
   });
   localStorage.setItem(
@@ -289,8 +284,7 @@ function dataPassToDetail(
   //   console.log(newObj)
   // localStore
   localStorage.setItem("dataToLocalDetail", JSON.stringify(newObj));
+
   //
-  //   window.location.href= ""
+  window.location.href = "/productpage/productDetail.html";
 }
-
-

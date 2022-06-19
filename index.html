@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./variable/allProduct/navbar.css" />
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
@@ -253,17 +253,18 @@
               <!-- drop down  -->
               <div id="signInDropDownNav">
                 <span>Welcome to Geekbuying</span>
-
-                <span>Join</span><span>Sign In</span>
+                <span id="signUpRed">
+                  <a href="/signinandsignup/signup.html"> Join </a> </span
+                ><span id="signInRed">
+                  <a href="/signinandsignup/signin.html"> Sign In </a>
+                </span>
               </div>
             </div>
-
             <div id="AddToCartOnNav">
               <img src="./variable/allProduct/images/cart.png" alt="" />
               <span id="cartCount">0</span>
               <div id="indivCartNav"></div>
             </div>
-
             <!-- // wishlist  -->
 
             <!-- <div id="addToFavouriteNav"> -->
@@ -2872,9 +2873,11 @@
     <div id="outer_box"></div>
   </body>
 </html>
-<script src="assets/scripts/script.js"></script>
+<script src="./assets/scripts/script.js"></script>
 <script src="./footer/footerImport.js" type="module"></script>
 <script src="./variable/allProduct/masterData/masterDataAllProduct.js"></script>
 <script src="./variable/allProduct/script/display.js"></script>
 <script src="./variable/allProduct/script/currencyData.js"></script>
 <script src="./variable/allProduct/script/navbarSearch.js"></script>
+
+<script></script>

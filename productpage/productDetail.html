@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/index.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
     <script
-      src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../footer/footer.css" />
-    <link rel="stylesheet" href="../variable/allProduct/navbar.css" />
-    <style>
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../footer/footer.css" />
+  <link rel="stylesheet" href="../variable/allProduct/navbar.css" />
+  <style>
     *{
       margin: 0px;
       padding: 0px;
     }
-    </style>
+  </style>
+    <title>Document</title>
   </head>
   <body>
-     <!-- nav start ========================================== -->
-     <div id="navbar">
+    <!-- nav start ========================================== -->
+    <div id="navbar">
       <div id="topOfTheNav">
         <div id="saveBigWithApp">
           <img src="../variable/allProduct/images/mobile.png" alt="" />
@@ -243,8 +243,11 @@
               <!-- drop down  -->
               <div id="signInDropDownNav">
                 <span>Welcome to Geekbuying</span>
-
-                <span>Join</span><span>Sign In</span>
+                <span id="signUpRed">
+                  <a href="/signinandsignup/signup.html"> Join </a> </span
+                ><span id="signInRed">
+                  <a href="/signinandsignup/signin.html"> Sign In </a>
+                </span>
               </div>
             </div>
 
@@ -747,7 +750,7 @@
         <h3><a href="">Clearance</a></h3>
         <h3><a href="">Deals</a></h3>
         <h3><a href="">Coupon</a></h3>
-        <h3><a href="#">App Only</a></h3>
+        <h3><a href="../footer/product.html">App Only</a></h3>
       </div>
     </div>
     <!-- nav end ========================================== -->
@@ -762,10 +765,10 @@
         />
         <p>Home/Sports & Outdoors/E-Bikes, Scooters & Wheels/Bikes</p>
       </div>
-      <div class="productInfo">
-        <div class="productImage"></div>
-        <div>
-          <h2 class="productName"></h2>
+      <div id="productInfo">
+        <div id="productImage">
+        </div>
+        <div id="productName">
         </div>
       </div>
       <h3 style="margin-left: 120px"><b>You May Also Like</b></h3>
@@ -914,45 +917,16 @@
           <img
             src="https://img.gkbcdn.com/s3/d/202204/718a2fb4-8474-40e3-8360-b798b205ca2d.jpg"
           />
-        </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/deb2182c-9a29-4091-90ef-b4ab94b0e08e.jpg"
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/18fef937-04f8-4a5f-8535-51b341bf67f8.jpg"
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/94e0fc16-334c-4b23-a2ba-909950fabd2b.jpg"
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/4cf3a9bf-e717-4812-88c3-615c08c6bbdb.jpg"
-          />
-        </div>
+        </div> 
         <div>
           <img
             src="https://img.gkbcdn.com/s3/d/202204/9185eab6-3e96-4705-bfc4-6d71d7de1dc6.jpg"
           />
         </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/5a1c3456-8665-42f4-9b19-aa02d851f3dd.jpg"
-          />
-        </div>
+       
         <div>
           <img
             src="https://img.gkbcdn.com/s3/d/202204/84ce6b20-f34e-4947-9d80-83552dfd7727.jpg"
-          />
-        </div>
-        <div>
-          <img
-            src="https://img.gkbcdn.com/s3/d/202204/447e5b7b-8cfe-402d-84d0-5da76380a925.jpg"
           />
         </div>
         <div>
@@ -961,14 +935,10 @@
           />
         </div>
       </div>
-      <h3 style="margin-left: 120px"><b>Specification</b></h3>
-      <div id="specBox">
-        
-      </div>
       <h3 style="margin-left: 120px"><b>Videos</b></h3>
       <div id="videos">
-        <iframe width="520" height="300" src="https://www.youtube.com/watch?v=A-wHe0JDX1I"> </iframe>
-        <iframe width="520" height="300" src="https://www.youtube.com/watch?v=TrjF9n_fLLU"> </iframe>
+        <iframe width="520" height="300" src="https://www.youtube.com/embed/A-wHe0JDX1I"> </iframe>
+        <iframe width="520" height="300" src="https://www.youtube.com/embed/7mG3j9tCu1M"> </iframe>
       </div>
       <h3 style="margin-left: 120px"><b>Customer Photos</b></h3>
       <div id="cust">
@@ -993,6 +963,7 @@
 
   </body>
 </html>
+
 <script src="../footer/footerImport.js" type="module"></script>
 <script src="../variable/allProduct/masterData/masterDataAllProduct.js"></script>
 <script src="../variable/allProduct/script/display.js"></script>

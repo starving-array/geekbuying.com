@@ -256,7 +256,7 @@ function showCart(cartArr) {
 
     // total update
     let totalSum = cartArr.reduce(function (a, b) {
-      return a + b.offerPrice;
+      return a + Number(b.offerPrice);
     }, 0);
 
     // console.log(totalSum);

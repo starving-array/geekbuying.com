@@ -367,19 +367,27 @@
   border-radius: 10px;
   border: 1px solid #1073fe;
 }
-#signInDropDownNav span + span:hover {
+/* #signInDropDownNav span + span:hover {
   color: #1073fe;
   background-color: transparent;
-}
+} */
 
 #signInDropDownNav span + span + span {
   color: #1073fe;
   background-color: transparent;
 }
-#signInDropDownNav span + span + span:hover {
+/* #signInDropDownNav span + span + span:hover {
   background-color: #1073fe;
   color: white;
+} */
+#signInDropDownNav span a{
+  color:  white;
+  text-decoration: none;
 }
+#signInDropDownNav span+span+span a{
+  color:  #1073fe;
+}
+
 
 /* // cart button navbar  */
 

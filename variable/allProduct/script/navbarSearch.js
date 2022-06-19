@@ -137,7 +137,7 @@ document.getElementById("logoNav").addEventListener("click", function () {
 document
   .getElementById("AddToCartOnNav")
   .addEventListener("click", function () {
-    window.location.href = "./cart/cart.html";
+    window.location.href = "/cart/cart.html";
   });
 
 let totalProductInCart = JSON.parse(localStorage.getItem("buyNow")).length;
@@ -153,9 +153,15 @@ if (activeUserInfo) {
   spanspan.innerText = `Hello ${activeUserInfo.name} !`;
   spanspan.style.fontSize = "1.1rem";
   spanspan.style.fontWeight = "bold";
+  spanspan.style.cursor = "pointer";
   spanspan.style.textTransform = "capitalize";
   document.getElementById("signInUpNav").innerHTML = "";
   document.getElementById("signInUpNav").append(spanspan);
+  spanspan.addEventListener("click", function () {
+    alert("logging out");
+    localStorage.removeItem("activeUser");
+    window.location.reload();
+  });
 }
 
 let singinButtonnnn = document.getElementById("signInRed");

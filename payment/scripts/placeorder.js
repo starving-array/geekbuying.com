@@ -35,8 +35,8 @@ payData.forEach((ele)=>{
     tCount.innerText = 'X '+ele.productCount;
 
     let tPrice = document.createElement('b');
-    tPrice.innerText = '₹ ' + Math.round((+(ele.productCount) * (+(ele.offerPrice)))*100)/100;
-    totalPrice += Math.round((+(ele.productCount) * (+(ele.offerPrice)))*100)/100
+    tPrice.innerText = '₹ ' + Math.round((+(ele.productCount) * (+(ele.offerPrice)/ele.productCount))*100)/100;
+    totalPrice += Math.round(ele.offerPrice)
     card.append(img,name,unitprice,tCount,tPrice);
 
     document.querySelector('#prods').append(card);

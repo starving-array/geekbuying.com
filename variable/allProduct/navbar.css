@@ -385,11 +385,12 @@
 
 #AddToCartOnNav {
   position: relative;
+  cursor: pointer;
 }
 
-#AddToCartOnNav:hover #indivCartNav {
+/* #AddToCartOnNav:hover #indivCartNav {
   display: block;
-}
+} */
 
 #indivCartNav {
   height: 300px;

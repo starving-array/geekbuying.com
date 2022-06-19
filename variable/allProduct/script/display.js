@@ -289,8 +289,7 @@ function dataPassToDetail(
   //   console.log(newObj)
   // localStore
   localStorage.setItem("dataToLocalDetail", JSON.stringify(newObj));
+
   //
-  //   window.location.href= ""
+  window.location.href = "/productpage/productDetail.html";
 }
-
-

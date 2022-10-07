@@ -1,6 +1,6 @@
 # geekbuying.com
  This is a E-commerce website.
-User can sign up, search and add product to the cart and buy.
+User can sign up, search and add products to your cart and place order.
 # 
 
 # Home page

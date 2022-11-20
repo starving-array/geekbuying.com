@@ -26,3 +26,10 @@ User can sign up, search and add products to your cart and place order.
    <img src="https://img.icons8.com/color/64/000000/css3.png" />
 
  </p>
+ 
+ - User can
+ 1. Sign up
+ 2. Sign in
+ 3. Search product
+ 4. Add product to cart
+ 5. Can place order

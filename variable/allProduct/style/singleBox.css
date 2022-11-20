@@ -17,8 +17,8 @@
   grid-gap: 1%;
   grid-template-rows: 50% 10% 10% 10% 10%;
 }
-.allProdcutBoxInner:hover{
-    box-shadow: #2a7ff7 1px 1px 7px 1px;
+.allProdcutBoxInner:hover {
+  box-shadow: #2a7ff7 1px 1px 7px 1px;
 }
 .allProdcutBoxInner > :nth-child(n) {
   margin-bottom: 10px;
@@ -87,8 +87,6 @@
   overflow-x: hidden;
 }
 
-
-
 .priceInfo {
   font-size: 1.3rem;
   font-weight: bold;
@@ -108,6 +106,7 @@
   height: 90px;
   margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 #paginationOnView {
@@ -162,4 +161,42 @@
 #leftPaginationButton:hover {
   background-color: #2a7ff7;
   color: white;
+}
+@media all and (min-width: 200px) and (max-width: 900px) {
+  #allCatagoriesFilter {
+    display: none;
+  }
+
+  #gridProductView {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+  }
+  .productNameInBox {
+    font-size: 0.7rem;
+    width: 160px;
+    height: 40px;
+    line-height: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .priceInfo,
+  .actualPriceInfo {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .footerBox {
+    font-size: 0.8rem;
+  }
+  .footerBox img {
+    margin-right: 11px;
+  }
+  #bottombar {
+    width: 90%;
+  }
+  #midbar {
+    height: 60px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
 }

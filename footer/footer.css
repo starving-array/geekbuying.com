@@ -2,7 +2,6 @@
   /* border: 1px solid black; */
   text-align: center;
   background-color: #f1f6fd;
- 
 }
 #footerH2 {
   color: #086dfe;
@@ -16,8 +15,9 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-br, hr{
-    color: rgb(227, 227, 227);
+br,
+hr {
+  color: rgb(227, 227, 227);
 }
 .btn {
   padding: 1% 1% 1% 1%;
@@ -35,6 +35,7 @@ br, hr{
   /* border: 1px solid black; */
   height: 300px;
   display: flex;
+  flex-wrap: wrap;
   text-align: left;
   justify-content: space-around;
 }
@@ -70,6 +71,7 @@ p {
 .popular {
   margin-left: 5%;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
   width: 80%;
@@ -85,4 +87,62 @@ p {
 }
 .curs {
   cursor: pointer;
+}
+@media all and (min-width: 200px) and (max-width: 900px) {
+  #inner_box {
+    font-size: 0.5rem;
+  }
+  #inner_box img {
+    width: 50px;
+  }
+  p {
+    padding: 0%;
+    margin: 0%;
+  }
+  #inner_box {
+    width: 92%;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .qrimg > div + div {
+    display: flex;
+    flex-direction: column;
+  }
+  #inner_box > #inc {
+    width: 130px;
+    margin-right: 0px;
+  }
+  #share >:nth-child(n) {
+    margin: -5px;
+    padding: 0px;
+    width: 2px;
+    height: 3px;
+    font-size: .7rem;
+  }
+  #inner_box>:nth-child(5){
+    display: flex;
+    justify-content: space-around;
+    max-height: 20px;
+    width: 70%;
+    align-items: center;
+  }
+  #inner_box>:nth-child(5)>:nth-child(n){
+    padding: 3px;
+  }
+  .popular{
+    width: 96%;
+    margin-bottom: 3px;
+  }
+  .popular>:nth-child(n){
+    font-size: .7rem;
+  }
+  .curs{
+    font-size: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+
 }

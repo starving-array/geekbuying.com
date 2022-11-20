@@ -97,7 +97,7 @@
 }
 .prices > :nth-child(n) {
   font-size: 1.9rem;
-  opacity: .9;
+  opacity: 0.9;
 }
 .prices > div:nth-child(2) {
   font-weight: bolder;
@@ -108,7 +108,7 @@
   border: 30px solid transparent;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 40% 10% 10% 10% 10% 10% 10%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -224,4 +224,61 @@
 .tempBoxDivAddTO > :first-child {
   color: #1073fe;
   background-color: white;
+}
+
+@media all and (min-width: 200px) and (max-width: 900px) {
+  #productInfo {
+    /* max-height: 600px; */
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 90%;
+  }
+  #like,
+  #desc,
+  #imgSeq,
+  #videos,
+  #cust,
+  #text {
+    display: none;
+    /* visibility: hidden; */
+  }
+  .container > h3 {
+    display: none;
+  }
+  #productImage {
+    margin-right: 10px;
+  }
+  #productName {
+    border: 10px solid transparent;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #productName>h3 {
+    margin-top: -50px;
+    font-size: 1rem;
+    word-spacing: 1px;
+    text-align: justify;
+  }
+  .prices > div {
+    padding-right: 0px;
+  }
+  .prices > div:nth-child(1) {
+    font-weight: bolder;
+  }
+  .prices > :nth-child(n) {
+    font-size: 1.3rem;
+    padding: 4px;
+  }
+  .prices > div:nth-child(2) {
+    font-weight: bolder;
+    margin-left: 0px;
+    /* font-size: 1rem; */
+  }
 }

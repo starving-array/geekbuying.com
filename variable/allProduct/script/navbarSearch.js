@@ -140,9 +140,9 @@ document
     window.location.href = "/cart/cart.html";
   });
 
-let totalProductInCart = JSON.parse(localStorage.getItem("buyNow")).length;
-console.log(totalProductInCart);
-document.getElementById("cartCount").innerText = totalProductInCart;
+let totalProductInCart = JSON.parse(localStorage.getItem("buyNow")) || [];
+console.log(totalProductInCart.length);
+document.getElementById("cartCount").innerText = totalProductInCart.length || 0;
 
 // sign in signUpRed signInRed
 // active user

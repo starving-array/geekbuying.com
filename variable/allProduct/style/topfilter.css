@@ -2,14 +2,12 @@ body {
   background-color: rgb(243, 243, 243);
 }
 #bodyPart {
-  /* background-color: aqua; */
   height: max-content;
   display: flex;
   flex-direction: column;
   width: 78%;
 }
 #filteroption {
-  /* kid of bodypart */
   height: 120px;
   background-color: white;
   border: 20px solid white;
@@ -128,4 +126,9 @@ body {
   margin: 5px;
 }
 
+@media all and (min-width: 200px) and (max-width: 900px) {
+  #filteroption{
+    display: none;
+  }
 
+}

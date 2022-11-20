@@ -1,13 +1,16 @@
 #navbar {
-  height: 10vh;
+  height: auto;
   height: fit-content;
   background-color: #1073fe;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: sticky;
+  top: 0px;
+  z-index: 3000;
 }
-#logoNav{
-    cursor: pointer;
+#logoNav {
+  cursor: pointer;
 }
 
 #topOfTheNav {
@@ -150,11 +153,12 @@
 #middleOfTheNav {
   display: flex;
   width: 100%;
-  border: 10px solid transparent;
+  /* border: 10px solid transparent; */
   align-items: center;
 }
 #middleOfTheNavIn {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
   justify-content: space-between;
@@ -170,7 +174,7 @@
 /* // search bar  */
 
 #searchBar {
-  height: 50px;
+  /* height: 50px; */
   width: 50%;
   background-color: white;
   display: flex;
@@ -193,15 +197,15 @@
 }
 #searchDwonPop {
   height: 450px;
-  width: 600px;
+  width: 500px;
   position: absolute;
   left: 200px;
-  top: 52px;
+  top: 45px;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 2;
   background-color: white;
-  border:25px solid transparent;
+  border: 25px solid transparent;
   display: none;
 }
 #searchBar:hover #searchDwonPop {
@@ -210,27 +214,26 @@
 .br {
   color: rgb(66, 65, 65);
 }
-#searchDwonPop>div{
-    display: flex;
-    color: black;
-    border: 20px solid transparent;
-    box-shadow: #a8caf9 0px 1px 8px 1px;
-
+#searchDwonPop > div {
+  display: flex;
+  color: black;
+  border: 20px solid transparent;
+  box-shadow: #a8caf9 0px 1px 8px 1px;
 }
-#searchDwonPop img{
-    height: 60px;
+#searchDwonPop img {
+  height: 60px;
 }
-#searchDwonPop span+span{
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    color: rgb(98, 97, 97);
-    margin-top: 5px;
+#searchDwonPop span + span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(98, 97, 97);
+  margin-top: 5px;
 }
-#searchDwonPop>div>div{
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 10px solid transparent;
+#searchDwonPop > div > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 10px solid transparent;
 }
 
 #allCatNavDropDown {
@@ -340,7 +343,7 @@
   width: 300px;
   position: absolute;
   right: -100px;
-  top: 40px;
+  top: 30px;
   background-color: white;
   z-index: 2;
   border-radius: 10px;
@@ -380,14 +383,13 @@
   background-color: #1073fe;
   color: white;
 } */
-#signInDropDownNav span a{
-  color:  white;
+#signInDropDownNav span a {
+  color: white;
   text-decoration: none;
 }
-#signInDropDownNav span+span+span a{
-  color:  #1073fe;
+#signInDropDownNav span + span + span a {
+  color: #1073fe;
 }
-
 
 /* // cart button navbar  */
 
@@ -505,10 +507,10 @@
 #catagoriesNavTailDiv:hover #catagoriesNavTailDropDown {
   display: block;
 }
-#catagoriesNavTailDiv:focus-within #navbar{
-    background-color: grey;
-    z-index: 1;
-    opacity: .2;
+#catagoriesNavTailDiv:focus-within #navbar {
+  background-color: grey;
+  z-index: 1;
+  opacity: 0.2;
 }
 
 #tailOfTheNav a {
@@ -699,7 +701,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  top: 60px;
+  top: 40px;
   display: none;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -745,7 +747,7 @@
   overflow-x: hidden;
   width: 100%;
   position: absolute;
-  top: 55px;
+  top: 50px;
   background-color: white;
   justify-content: space-around;
   border: 10px solid transparent;
@@ -771,7 +773,123 @@ br {
   color: gray;
 }
 
-
-#allProductBoxOuter{
+#allProductBoxOuter {
   cursor: pointer;
+}
+
+@media all and (min-width: 200px) and (max-width: 900px) {
+  #topOfTheNav {
+    font-size: 0.5rem;
+  }
+  #topOfTheNav img {
+    height: 10px;
+  }
+  #middleOfTheNavIn img {
+    height: 30px;
+  }
+
+  #allCatNavDropDown {
+    display: none;
+  }
+  #searchBar img {
+    height: 20px;
+  }
+
+  #searchNav {
+    width: 72%;
+    padding: 2px 5px;
+    font-size: 0.6rem;
+  }
+  #signbarNav {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #shipToNab {
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+  }
+
+  #signInDropDownNav {
+    height: 150px;
+    width: 210px;
+    right: -20px;
+    top: 30px;
+    grid-template-columns: 60%;
+    border-radius: 5px;
+  }
+  #signInDropDownNav span + span {
+    font-size: 0.8rem;
+  }
+  #AddToCartOnNav img {
+    height: 15px;
+  }
+  #AddToCartOnNav span {
+    font-size: 0.6rem;
+    right: inherit;
+  }
+  #shipToNab img {
+    height: 10px;
+  }
+  #signInUpNav {
+    display: flex;
+    align-items: center;
+  }
+  #signInUpNav {
+    font-size: 0.8rem;
+  }
+  #signInUpNav img {
+    height: 15px;
+    margin-right: 5px;
+  }
+  #currencyDropDown {
+    height: 230px;
+    width: 260px;
+    right: -190px;
+    font-size: 0.8rem;
+  }
+  #currencyDropDown > h3 {
+    font-size: 0.7rem;
+  }
+  #currencyDropDown img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  #currencyNavDropIn {
+    display: none;
+    height: 300px;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  #middleOfTheNavIn > :nth-child(n) {
+    padding-top: 10px;
+  }
+  #catagoriesNavTailDiv {
+    font-size: 0.7rem;
+  }
+  #tailOfNav {
+    width: 98%;
+  }
+  #tailOfTheNav > :nth-child(n + 1) {
+    display: none;
+  }
+
+  #tailOfTheNav > :nth-child(2),
+  #tailOfTheNav > :nth-child(3),
+  #tailOfTheNav > :nth-child(4),
+  #tailOfTheNav > :nth-child(5),
+  #tailOfTheNav > :nth-child(6),
+  #tailOfTheNav > :nth-child(7) {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 3px;
+  }
+  #searchBar:hover #searchDwonPop {
+    display: block;
+  }
+  .im{
+    max-width: 102px;
+  }
 }

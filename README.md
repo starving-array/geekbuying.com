@@ -9,8 +9,8 @@ User can sign up, search and add products to your cart and place order.
 # Product Page
 ![Product Page](geekbuy.png)
 
-# code live at
-# https://adorable-cobbler-b9755b.netlify.app/index.html
+### code live at
+### [Live!](https://geek-buying-cloned.netlify.app/)
 
 ## Tech Stacks Used
 
